@@ -45,24 +45,57 @@ public class Vehiculo {
                 ", Serial='" + Serial + '\'' +
                 '}';
     }
+    /* Metodos Propios*/
 
+     /* Tipos de metodos
+                                                 vacio
+        *    sin parametros sin retorno : public void frenar (){}
+
+        *    sin parametros con retorno : public string frenar (){
+                                          //primer forma
+                                          return "Estoy frenando";
+
+                                          //segunda forma
+                                           string mensaje = "Estoy frenando";
+                                           return mensaje;
+
+        * Con parametros sin retorno:    public void tanqueo(int cantidad)
+                                          sout("el combustible es: cantCombustible+Cantidad");
+
+
+                                               return           parametro
+        * Con parametros con retorno:     public int tanqueo (int cantidad){
+                                          return cantCombustible + cantidad
+                                            }
+
+                                            siempre que un metodo tenga un return se debe llamar con un sout.
+                                            cuando el metodo es sin retorno se llama el objeto sin sout.
+         */
+
+       //Metodo sin parametros sin retorno
     public void arrancar(){
 
         System.out.println(" Soy un carro y voy a Arrancar ");
 
     }
-    public void frenar(){
 
-        System.out.println(" Soy un carro y voy a Frenar ");
+             //Metodo con retorno sin parametros
+    public String frenar(){
+
+       return" Soy un carro y voy a Frenar ");
     }
-    public void tanquear(){
+    public int tanquear(){
 
-        System.out.println(" Soy un carro y voy a Tanquear ");
-
+        return 56;
     }
-    public void acelerar(){
 
-        System.out.println(" Soy un carro y voy a acelerar ");
+
+           // Metodo con retorno y parametros
+    public int retanquear(int cantidad){
+
+       int c = 56;
+
+       return c + cantidad;
 
     }
 
